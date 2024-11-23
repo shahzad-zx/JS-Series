@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Temperature Converter</title>
+</head>
+<body>
+    <script>
+        function convertCelsiusToFahrenheit() {
+            let celsius = prompt("Enter the temperature in Celsius: ");
+            celsius = parseFloat(celsius); // Convert the input to a number
+            if (isNaN(celsius)) {
+                alert("Please enter a valid number.");
+                return;
+            }
+            let fahrenheit = (celsius * 9) / 5 + 32;
+            alert(`The temperature in Fahrenheit is: ${fahrenheit}`);
+        }
+        convertCelsiusToFahrenheit();
+    </script>
+</body>
+</html>

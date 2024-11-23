@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prime Numbers</title>
+</head>
+<body>
+    <script>
+        let start = 2; // Starting range
+        let end = 15; // Ending range
+
+        document.write("Prime numbers between " + start + " and " + end + ":<br>");
+
+        for (let i = start; i <= end; i++) {
+            let isPrime = true; // Assume the number is prime
+
+            // Check if i is prime
+            for (let j = 2; j <= Math.sqrt(i); j++) {
+                if (i % j === 0) {
+                    isPrime = false; // Found a divisor, so it's not prime
+                    break; // No need to check further
+                }
+            }
+
+            if (isPrime) {
+                document.write(i + " is a prime number<br>");
+            }
+        }
+
+
+
+
+
+        let startF = 2; // Starting range
+        let endE = 15; // Ending range
+
+        document.write("Prime numbers between " + startF + " and " + endE + ":<br>");
+
+        for (let i = startF; i <= endE; i++) {
+            let isPrime = true; // Assume the number is prime
+
+            // Check if i is prime
+            for (let j = 2; j < i; j++) {
+                if (i % j === 0) {
+                    isPrime = false; // Found a divisor, so it's not prime
+                    break; // No need to check further
+                }
+            }
+
+            if (isPrime) {
+                document.write(i + " is a prime number<br>");
+            }
+        }
+    </script>
+</body>
+</html>

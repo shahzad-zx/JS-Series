@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/bootstrap/css/bootstrap.min.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <!-- Question 1: Display Product Information
+        Create a multidimensional array that holds information about products (name, price, category). Use a nested loop to display this information in a Bootstrap table. -->
+
+
+    <script>
+        let products = [
+            ["Laptop", 999.99, "Electronics"],
+            ["Coffee Maker", 49.99, "Home Appliances"],
+            ["Desk Chair", 89.99, "Furniture"]
+        ];
+
+        document.write('<table class="table table-bordered">')
+            
+        document.write(' <tr><td><strong>Name</strong></td><td><strong>Price</strong></td><td><strong>Category</strong></td></tr></thead>')
+        document.write('<tbody>')
+        for (let i = 0; i < 3; i++) {
+            document.write('<tr>');
+            for (let k = 0; k < 3; k++) {
+                document.write('<td>' + products[i][k] + '</td>')
+            }
+            document.write('</tr>');
+        }
+        document.write('</tbody> </table>')
+
+
+        // Question 2: Recipe Ingredients
+        // Create a multidimensional array that contains recipes (Recipe Name, Ingredient, Quantity). Render this information in a Bootstrap table.
+
+
+        let recipes = [
+            ["Pasta", "Noodles", "200g"],
+            ["Pasta", "Tomato Sauce", "100g"],
+            ["Salad", "Lettuce", "1 head"]
+        ];
+
+        document.write('<table class="table table-bordered">')
+        document.write(' <tr><td><strong>Name</strong></td><td><strong>Ingredient</strong></td><td><strong>Quantity</strong></td></tr></thead>')
+        document.write('<tbody>')
+        for (let y = 0; y < 3; y++) {
+            document.write('<tr>');
+            for (let z = 0; z < 3; z++) {
+                document.write('<td>' + recipes[y][z] + '</td>')
+            }
+            document.write('</tr>');
+        }
+        document.write('</tbody></table>')
+
+    </script>
+
+
+
+</body>
+
+</html>

@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/bootstrap/css/bootstrap.min.css">
+    <title>Document</title>
+</head>
+
+<body>
+        <!-- Q3. print Multidimensional Array in  Bootstrap Table
+        (Using For Loop -->
+    <script>
+        let arr = [
+            ["Steve", 18, "Full stack"],
+            ["Jain", 20, "Web Dev"],
+            ["Raj", 21, "Backend Developer"]
+        ];
+        document.write('<table class="table table-bordered">')
+        document.write(' <thead><tr><td>Name</td><td>Age</td><td>Designation</td></tr></thead>')
+        document.write('<tbody>')
+        for (let i = 0; i < arr.length; i++) {
+            document.write('<tr>')
+            for (let j = 0; j < arr.length; j++) {
+                document.write('<td>' + arr[i][j] + '</td>')
+            }
+            document.write('</tr>')
+        }
+        document.write('</tbody></table>')
+
+
+
+        // document.write('<table class="table table-bordered">');
+        // document.write('<thead> <tr> <th>Name</th>  <th>Age</th>  <th>Designation</th> </tr> </thead>');
+        // document.write('<tbody>');
+
+        // for (let i = 0; i < 3; i++) {
+        //     document.write('<tr>')
+        //     for (let j = 0; j < 3; j++) {
+        //         document.write('<td>' + arr[i][j] + '</td>')
+        //     }
+        //     document.write('</tr>');
+        // }
+
+        // document.write('</tbody></table>');
+
+    </script>
+</body>
+
+</html>

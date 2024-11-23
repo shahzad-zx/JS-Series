@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        function fetchWater(count) {
+            if (count == 0) {
+                console.log("No more water left!")
+                return;
+            }
+            console.log("Fetching water...")
+            setTimeout(() => {
+                console.log("Water fetched!")
+                fetchWater(count - 1);
+
+            }, 1000);
+
+
+        }
+        fetchWater(5)
+    </script>
+
+</body>
+
+</html>

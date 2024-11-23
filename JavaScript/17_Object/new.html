@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/bootstrap/css/bootstrap.min.css">
+    <title>Document</title>
+</head>
+
+<body>
+<!-- Q1. Print Array With object into bootstrap Table -->
+
+
+    <script>
+
+        let arr = [
+            { name: 'John', age: 25, des: "Full stack" },
+            { name: 'Game', age: 15, des: "Front stack" },
+            { name: 'Fame', age: 75, des: "Backend stack" },
+            { name: 'Naveen', age: 19, des: "Full stack" },
+        ]
+
+        document.write('  <table class="table table-bordered">  <thead> <tr> <td>name</td> <td>age</td> <td>Designation</td> </tr> </thead> <tbody>   ')
+        for (let i = 0; i <= arr.length - 1; i++) {
+            document.write('<tr> <td>' + arr[i].name + '</td> <td>' + arr[i].age + '</td> <td>' + arr[i].des + '</td> </tr>')
+        }
+        document.write('</tbody> </table>')
+
+        
+    </script>
+</body>
+
+</html>

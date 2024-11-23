@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // Function
+        // function greet(name, callback) {
+        //     document.write("Hi " + name);
+        //     callback();
+        // }
+
+        // // Callback Function
+        // function callMe() {
+        //     document.write("  I am callback function")
+        // }
+
+        // // passing function as an agrument
+        // greet("shahzad", callMe)
+
+
+
+        // Example
+
+        //  Arrow Function
+        const calculate = (a, b, operation) => {
+            return operation(a , b)
+        }
+        // Method 1
+        const addition = calculate( 5, 45, function (num1 , num2) {
+            return num1 + num2;
+        })
+
+        document.write(addition + " ")
+
+        // Method 2
+        const subtraction = (a, b) => a - b
+        const subResult = calculate( 10, 5 , subtraction)
+        document.write(subResult)
+    </script>
+</body>
+</html>

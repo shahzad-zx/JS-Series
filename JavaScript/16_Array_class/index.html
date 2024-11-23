@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+
+
+    <!-- There are different type of array method
+    1. sort()
+    2. reverse()
+    3. pop()
+    4. push()
+    5. shift()
+    6. unshift()
+    7. concat()
+    8. join()
+    9. slice()
+    10.splice()
+    11. isArray()
+    12. indexof()
+    13. lastindexof()
+    14.  every()
+    17. find()
+    18. findindex()
+    19. include()
+    20. some()
+    21. foreach()
+    22. tostring()
+    24. fill() -->
+    <script>
+        // let arr = ["Shahzad", 32 , "Car"]
+        // document.write(arr)
+        // document.write(arr[1])
+        // document.write(arr[2])
+        // arr[0] = "Raj";
+        // document.write(arr)
+
+
+        // print array using loop
+        // for(let i = 0; i<=2; i++) {
+        //     document.write(arr[i] + " ");
+        // }
+
+
+        // Multidimensional Array
+        let arr2 = [["shahzad", 1, "first-array"], ["Raj", "car", 2]]
+        // document.write(arr2)
+
+        // Printing multidimensioanl array using loop
+        // for(let i = 0; i<=2; i++) {
+        //     for(let j=0; j<=2; j++) {
+        //         document.write(arr2[i][j])
+        //     }
+        //     document.write("<br>")
+        // }
+
+
+        // let arr = ["Shahzad", 32 , "Car"]
+        var arr = ["First", "Big", "Neil", "Tower", "Car", "Raw", "Big", "Physics",];
+        // var arr2 = [1, 2, 3, 4, 5]
+        // document.write(arr.sort())
+        // document.write(arr.reverse())
+        // arr.pop()
+        // document.write(arr)
+        // document.write(arr.pop())
+        // arr.push("Anil")
+        // document.write(arr)
+        // arr.shift()   //Remove the first element
+        // document.write(arr)
+        // document.write(arr.shift())
+
+        // arr.unshift("Add First element")
+        // document.write(arr)
+
+        // let newArr = arr.concat(arr2)
+        // document.write(newArr)
+
+        // let newArr = arr.join("+")
+        // document.write(newArr)
+
+        // let newArr = arr.slice(2, 4 )
+        // document.write(newArr)
+
+        // let newArr = arr.splice(2,4)
+        // document.write(newArr)
+
+        // document.write(arr.indexOf("Big"))
+        // document.write(arr.lastIndexOf("Big"))
+
+        // let newArr = Array.isArray(arr)
+        // document.write(newArr)
+        // document.write("<br>")
+        // document.write(typeof(newArr))
+        // document.write("<br>")
+        // document.write(typeof(arr))
+
+        // var newarr = arr2.every(test)
+        // function test(e) {
+        //     return e > 4
+        // }
+        // document.write(newarr)
+
+        // let newArr = arr2.every(test)
+        // function test(e) {
+        //     return e > 0
+        // }
+        // document.write(newArr)
+
+        // let newArr = arr2.some(test)
+        // function test(e) {
+        //     return e > 4
+        // }
+        // document.write(newArr)
+
+
+        // let newArr = arr2.find(test)
+        // function test(e) {
+        //     return e > 3
+        // }
+        // document.write(newArr)
+
+        // let newArr = arr2.findIndex(test)
+        // function test(e) {
+        //     return 1 + 1
+        // }
+        // document.write(newArr)
+
+        // arr.forEach(function (item) {
+        //     document.write(item + "<br>")
+        // })
+        // arr2.forEach(function(item) {
+        //     document.write(item + "<br>")
+        // })
+
+        // let combineArray = arr.concat(arr2);
+
+        // combineArray.forEach(function(item) {
+        //     document.write(combineArray + "<br>")
+        // })
+
+
+
+        // // Concatenate both arrays
+        // var combinedArray = arr.concat(arr2);
+
+        // // Print elements of the combined array using forEach
+        // combinedArray.forEach(function (item) {
+        //     document.write(item + "<br>");
+        // });
+
+        // let newArr = arr.fill("abc"  ,2 , 4 )
+        // document.write(newArr)
+    </script>
+    <script>
+        let arr3 = [5, 7, 1, 2]
+        // let newArr = arr3.every(test)
+        // function test(e) {
+        //     return e > 0 
+        // }
+
+        // let newArr = arr3.find(test)
+        // function test(e) {
+        //     return e > 5
+        // }
+
+        // let newArr = arr3.findIndex(test)
+        // function test(e) {
+        //     return e > 1
+        // }
+        // let newArr = arr3.lastIndexOf(test).findIndex(test)
+        // function test(e) {
+        //     return e > 1
+        // }
+
+
+        // let newArr = arr3.includes(3)
+
+
+        // let newArr = arr3.some(test)
+        // function test(e) {
+        //     return e > 5
+        // }
+
+
+        // document.write(newArr)
+
+
+
+
+        // 1. forEach()
+        // The forEach() method executes a provided function once for each array element. It does not return a new array but instead allows you to perform operations on each element.
+        // const numbers = [1, 2, 3, 4, 5];
+        // const newFun = numbers.forEach(function (num) {
+        //     document.write(num * 2); // Outputs: 2, 4, 6, 8, 10
+        //     return num > 5
+        // });
+        // document.write(newFun)
+
+
+
+        //  var newarr = arr.forEach(function(item){
+        //     document.write(item + "W ");
+        // })
+
+
+        // const fruits = ["Apple", "Mango", "Banana"]
+        // let newFruits = fruits.join(' + ').toString()
+        // document.write(newFruits)
+        // document.write(fruits)
+
+        let arr = [1, 2, 3];
+        // let newArr = arr.fill(0); // newArr is the same as arr
+        document.write(arr); // Outputs: [0, 0, 0]
+        document.write(newArr); // Outputs: [0, 0, 0]
+    </script>
+</body>
+
+</html>

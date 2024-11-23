@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // Normal Function
+        function name() {
+            document.write('<button> Click Here</button>')
+        }
+        name()
+
+        // Parameter Function
+        function test(text) {
+            document.write('<button>'+ text + '</button>')
+        }
+        test("Read Only")
+
+        // Return Function
+        function sum(a , b) {
+            return a + b
+        }
+        let sumVar = sum(5,5)
+        document.write(sumVar)
+
+        // Arrow Function
+        
+        // let nameF = (a) => {
+        //     document.write("This is arrow function "+ a)
+        // }
+        // nameF("shahzad")
+    </script>
+</body>
+</html>

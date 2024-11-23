@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        //  A function that produces the same output for the same input
+        function sayGreeting(name) {
+            // return "Hello, " + name + "!";
+            return `Hello ${name}`;
+        }
+         let result = sayGreeting("Shahzad ")
+        // result()
+        document.write(result)
+
+        document.write('<br>')
+
+        // opposite of pure function
+        const morning = " Hola"
+        function greeting(name) {
+            return `${morning} ${name}`
+        }
+
+        const res = greeting("Shahzad ")
+        document.write(res)
+    </script>
+</body>
+</html>

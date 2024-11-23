@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/bootstrap/css/bootstrap.min.css">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <script src="/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script>
+        let a = 5
+        let b = 5
+        let c = 5
+        if(a*b*c < 0) {
+            document.write(' <div class="container"> <div class="row"> <div class="col-lg-6"><div class="alert alert-dismissible alert-danger"> <strong> The product is Negative</strong> <button class="btn-close" data-bs-dismiss="alert"></button> </div>    </div>  </div>  </div>  ')
+        }else if(a*b*c > 0) {
+            document.write(' <div class="container"> <div class="row"> <div class="col-lg-6"><div class="alert alert-dismissible alert-success"> <strong> The product is Positive</strong> <button class="btn-close" data-bs-dismiss="alert"></button> </div>    </div>  </div>  </div>  ')
+        } else {
+            document.write(' <div class="container"> <div class="row"> <div class="col-lg-6"><div class="alert alert-dismissible alert-warning"> <strong> The product is zero</strong> <button class="btn-close" data-bs-dismiss="alert"></button> </div>    </div>  </div>  </div>  ')
+        }
+    </script>
+
+</body>
+
+</html>

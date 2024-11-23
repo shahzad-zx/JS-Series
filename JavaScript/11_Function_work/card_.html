@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/bootstrap/css/bootstrap.min.css">
+    <title>Document</title>
+    <style>
+        body {
+            background-color: #ffffff;
+        }
+
+        .card {
+            border: none;
+        }
+
+        .card-title {
+            font-size: 1.5rem;
+            font-weight: bold;
+        }
+
+        .card-text {
+            font-size: 1rem;
+            color: #6c757d;
+        }
+
+    </style>
+</head>
+<body>
+    
+
+    <script>
+
+        function card() {
+            let card_link = prompt("Enter card image link:")
+            let card_title = prompt("Enter card title")
+            let card_content = prompt("Enter card content")
+            let color = prompt("Enter button color")
+            let text = prompt("Enter button text")
+            document.write('<div class="container mt-5"><div class="row "><div class="col-lg-6 shadow"><div class="row"><div class="col-md-4"><img class="img-fluid" height="200"src="' + card_link + '" width="300" /></div><div class="col-md-8"><div class="card"><div class="card-body"><h5 class="card-title">' + card_title + '</h5><p class="card-text">' + card_content + '</p>  <button class="btn btn-' + color + '"> ' + text + '  </button> </div></div></div></div></div></div></div>')
+        }
+
+        card()
+
+
+
+
+        function card(card_link, card_title, card_content, color, text) {
+            document.write('<div class="col-lg-6 mt-3 shadow"><div class="row"><div class="col-md-4"><img class="img-fluid" height="200"src="' + card_link + '" width="300" /></div><div class="col-md-8"><div class="card"><div class="card-body"><h5 class="card-title">' + card_title + '</h5><p class="card-text">' + card_content + '</p>  <button class="btn btn-' + color + '"> ' + text + ' </button> </div></div></div></div></div>')
+        }
+        document.write('<div class="container mt-5"><div class="row ">')
+        card("https://www.sithub.in/Admin/CourseImages/7155205%20(1).jpg", "Card Title", "Are you looking to boost your website's visibility and increase your online presence? Look no further than SITHUB's SEO course! Our comprehensive course will teach you all the ins and outs of search[...]", "danger", "Click here")
+        card("https://www.sithub.in/Admin/CourseImages/7155205%20(1).jpg", "Card Title", "Are you looking to boost your website's visibility and increase your online presence? Look no further than SITHUB's SEO course! Our comprehensive course will teach you all the ins and outs of search[...]", "danger", "Click here")
+        card("https://www.sithub.in/Admin/CourseImages/7155205%20(1).jpg", "Card Title", "Are you looking to boost your website's visibility and increase your online presence? Look no further than SITHUB's SEO course! Our comprehensive course will teach you all the ins and outs of search[...]", "danger", "Click here")
+        document.write('</div></div>')
+    </script>
+</body>
+</html>

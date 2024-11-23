@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prime Numbers</title>
+</head>
+<body>
+    <script>
+        function isPrime(num) {
+            if (num <= 1) return false; // Numbers less than 2 are not prime
+            for (let i = 2; i <= Math.sqrt(num); i++) {
+                if (num % i === 0) return false; // If divisible, not prime
+            }
+            return true; // If no divisors found, it's prime
+        }
+
+        let start = 2; // Starting range
+        let end = 15; // Ending range
+
+        document.write("Prime numbers between " + start + " and " + end + ":<br>");
+
+        for (let i = start; i <= end; i++) {
+            if (isPrime(i)) {
+                document.write(i + " is a prime number<br>");
+            }
+        }
+
+
+
+
+
+
+
+
+
+
+
+
+
+        function isPrime(num) {
+            if (num <= 1) return false; // Numbers less than 2 are not prime
+            for (let i = 2; i < num; i++) { // Check up to num - 1
+                if (num % i === 0) return false; // If divisible, not prime
+            }
+            return true; // If no divisors found, it's prime
+        }
+
+        let startF = 20; // Starting range
+        let endE = 35; // Ending range
+
+        document.write("Prime numbers between " + startF + " and " + endE + ":<br>");
+
+        for (let i = startF; i <= endE; i++) {
+            if (isPrime(i)) {
+                document.write(i + " is a prime number<br>");
+            }
+        }
+    </script>
+</body>
+</html>
+
+
